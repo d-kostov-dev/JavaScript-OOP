@@ -1,4 +1,4 @@
 JavaScript-OOP
 ==============
 
-JavaScript OOP Homework
+JavaScript OOP Homeworks
