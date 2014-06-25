@@ -3,7 +3,7 @@
 var domModule = (function domModule() {
     // Will not be visible after return
     var elementsBuffer = [],
-        bufferSize = 100; 
+        bufferSize = 100;
 
     // Gets node and appends it to selector
     function appendChild(node, selector) {
@@ -18,7 +18,7 @@ var domModule = (function domModule() {
         // Using the already existing function
         appendChild(newNode, selector);
     }
-    
+
     // Remove all items that are found in all selectors given
     function remove(selector, toRemove) {
         var parentNode = document.querySelectorAll(selector);
@@ -87,5 +87,5 @@ var domModule = (function domModule() {
         appendToBuffer: appendToBuffer,
         createAndAppendToBuffer: createAndAppendToBuffer,
         cssSelector: cssSelector
-    }
+    };
 }());
