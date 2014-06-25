@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Functions Homework - Task 2 - Moving DIVs</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <input type="button" onclick="addToCircle()" value="Add To Circle"/>
+    <input type="button" onclick="addToRectangle()" value="Add To Rectangle" />
+    <script>
+        /*
+        Create a module that works with moving div nodes.
+
+        Implement functionality for:
+             Add new moving div element to the DOM
+             The module should generate random background, font and border colors for the div element
+             All the div elements are with the same width and height
+             The movements of the div nodes can be either circular or rectangular
+             The elements should be moving all the time
+        */
+
+        function addToCircle() {
+            movingShapes.add("ellipse");
+        }
+
+        function addToRectangle() {
+            movingShapes.add("rect");
+        }
+
+        function rotateDivs() {
+            movingShapes.rotateCircle();
+            movingShapes.rotateRect();
+            requestAnimationFrame(rotateDivs);
+        }
+
+        rotateDivs();
+        
+    </script>
+</body>
+</html>
