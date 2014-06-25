@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Functions Homework - Task 1 - DOM Module</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li><a class="button" href="#">Click Me</a></li>
+        <li><a class="button" href="#">Click Me</a></li>
+        <li><a class="button" href="#">Click Me</a></li>
+        <li><a class="button" href="#">Click Me</a></li>
+    </ul>
+
+    <ul class="secondUl">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script>
+        /*
+            Create a module for working with DOM. The module should have the following functionality
+              Add DOM element to parent element given by selector
+              Remove element from the DOM by given selector
+              Attach event to given selector by given event type and event hander
+              Add elements to buffer, which appends them to the DOM when their count for some selector becomes 100
+              The buffer contains elements for each selector it gets
+              Get elements by CSS selector
+              The module should reveal only the methods
+        */
+
+        // Append Elements
+        var divElement = document.createElement("div");
+        domModule.appendChild(divElement, "body");
+        domModule.createAndAppendChild("div", "body"); // Bonus Function
+
+        // Remove Elements
+        domModule.removeChild("ul", "li:first-child");        domModule.removeChild(".secondUl", "li");        // Attach Events        domModule.addHandler("a.button", 'click', function () {
+            alert("Clicked")
+        });        // Add to buffer
+        for (var i = 0; i < 105; i++) {
+            // Can also use domModule.appendToBuffer();
+            domModule.createAndAppendToBuffer("div","body");
+        }
+
+        // CSS Selector
+        var myNode = domModule.cssSelector(".secondUl");
+        console.log(myNode);
+    </script>
+</body>
+</html>
