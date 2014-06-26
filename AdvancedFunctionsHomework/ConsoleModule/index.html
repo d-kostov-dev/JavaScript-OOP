@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Functions Homework - Task 3 - Console Module</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <script>
+        /*
+            Create a module to work with the console object.
+
+                Implement functionality for:
+                 Writing a line to the console 
+                 Writing a line to the console using a format
+                 Writing to the console should call toString() to each element
+                 Writing errors and warnings to the console with and without format
+        */
+
+        specialConsole.writeLine("Simple Text");
+        specialConsole.writeLine("Formated {0} is {1} {2}", "text","pladced", "here");
+
+        specialConsole.writeError("Simple Error");
+        specialConsole.writeError("Formated {0} is {1} {2}", "error", "placed", "here");
+
+        specialConsole.writeWarning("Simple Warning");
+        specialConsole.writeWarning("Formated {0} is {1} {2}", "warning", "placed", "here");
+    </script>
+</body>
+</html>

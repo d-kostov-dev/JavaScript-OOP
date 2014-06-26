@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleForDOM", "ModuleForDO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingDivs", "MovingDivs\MovingDivs.csproj", "{BA842A88-FEA1-4B3D-9B3C-81FEE9D6105D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleModule", "ConsoleModule\ConsoleModule.csproj", "{0D29E774-B088-4F64-83FE-278F21416D4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BA842A88-FEA1-4B3D-9B3C-81FEE9D6105D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA842A88-FEA1-4B3D-9B3C-81FEE9D6105D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA842A88-FEA1-4B3D-9B3C-81FEE9D6105D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D29E774-B088-4F64-83FE-278F21416D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D29E774-B088-4F64-83FE-278F21416D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D29E774-B088-4F64-83FE-278F21416D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D29E774-B088-4F64-83FE-278F21416D4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
