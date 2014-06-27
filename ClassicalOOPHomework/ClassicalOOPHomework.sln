@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanvasModule", "CanvasModul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanvasModuleV2", "CanvasModuleV2\CanvasModuleV2.csproj", "{21C2157D-D9FE-49B7-97E5-3403F4AB6F38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanvasModule-Final", "CanvasModule-Final\CanvasModule-Final.csproj", "{33713BBF-436E-4058-9B65-C6FE4D8F8DCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{21C2157D-D9FE-49B7-97E5-3403F4AB6F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21C2157D-D9FE-49B7-97E5-3403F4AB6F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21C2157D-D9FE-49B7-97E5-3403F4AB6F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33713BBF-436E-4058-9B65-C6FE4D8F8DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33713BBF-436E-4058-9B65-C6FE4D8F8DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33713BBF-436E-4058-9B65-C6FE4D8F8DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33713BBF-436E-4058-9B65-C6FE4D8F8DCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Classical OOP Homework - Task 1 - Canvas Module</title>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <canvas id="myCanvas" style="border:1px solid #000000;"></canvas>
+    <script>
+        /*
+            Create a module for drawing shapes using Canvas.
+            Implement the following shapes:
+             Rect, by given position (X, Y) and size (Width, Height)
+             Circle, by given center position (X, Y) and radius (R)
+             Line, by given from (X1, Y1) and to (X2, Y2) positions
+        */
+        var myDrawing = new Canvas("#myCanvas", 600, 600);
+        myDrawing.addRect(50, 50, 50, 50, "#ff0000");
+        myDrawing.addCircle(300, 300, 50, "#0000ff");
+        myDrawing.addLine(50, 50, 550, 550, "#00ff00", "#00ff00");
+    </script>
+</body>
+</html>
