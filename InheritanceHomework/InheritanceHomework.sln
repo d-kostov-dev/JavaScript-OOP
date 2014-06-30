@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolSystem", "SchoolSystem\SchoolSystem.csproj", "{A986FD74-A443-4B06-AF9F-BD5B204A0415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FavoriteSites", "FavoriteSites\FavoriteSites.csproj", "{C9F2BE69-FDD8-43E4-8D3A-D222538EF283}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A986FD74-A443-4B06-AF9F-BD5B204A0415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A986FD74-A443-4B06-AF9F-BD5B204A0415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A986FD74-A443-4B06-AF9F-BD5B204A0415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A986FD74-A443-4B06-AF9F-BD5B204A0415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F2BE69-FDD8-43E4-8D3A-D222538EF283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F2BE69-FDD8-43E4-8D3A-D222538EF283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F2BE69-FDD8-43E4-8D3A-D222538EF283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F2BE69-FDD8-43E4-8D3A-D222538EF283}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
