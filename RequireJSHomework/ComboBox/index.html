@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>RequireJS Homework - Taks 1 - Combo Box</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="scripts/libs/require.js" data-main="scripts/main.js"></script>
+</head>
+<body>
+    <div id="mainDiv">
+        <div class="selectedPerson">Select person</div>
+    </div>
+
+    <script id="person-template" type="text/x-handlebars-template">
+        {{#people}}
+        <div class="person-item" id="person-item-{{id}}">
+            <strong class="person-name">Name: {{name}}</strong><p class="person-age">Age: {{age}}</p>
+            <img src="{{avatarUrl}}" width="100px" />
+        </div>
+        {{/people}}
+    </script>
+</body>
+</html>
