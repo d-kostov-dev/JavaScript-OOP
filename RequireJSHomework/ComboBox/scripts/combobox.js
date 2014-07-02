@@ -1,6 +1,4 @@
-﻿/// <reference path="libs/jquery.js" />
-
-define(["jquery"], function ($) {
+﻿define(["jquery"], function ($) {
     return $.fn.combobox = function () {
         var $self = $(this);
         var $persons = $self.find(".person-item");

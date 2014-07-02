@@ -2,35 +2,30 @@
 
 (function () {
     require.config({
-        baseUrl: 'scripts/libs',
         paths: {
-            "jquery": "jquery",
-            "handlebars": "handlebars",
-            "combobox": "../combobox"
+            "jquery": "libs/jquery",
+            "handlebars": "libs/handlebars",
+            "combobox": "combobox",
+            "templateEngine": "templateEngine"
         }
     });
 
-    require(["jquery", "combobox", "handlebars"], function ($) {
+    require(["jquery", "templateEngine", "combobox"], function ($) {
+        // I am just requiring the combobox and template engine modules to create the Jquery Plugins. Then just use them.
 
         // Data object
-        var people = {
-            people: [{
-                id: 1, name: "Doncho Minkov", age: 18, avatarUrl: "images/doncho.jpg"
+        var people = [{
+            id: 1, name: "Doncho Minkov", age: 18, avatarUrl: "images/doncho.jpg"
             },
             {
                 id: 2, name: "Niki Kostov", age: 19, avatarUrl: "images/niki.jpg"
             },
             {
                 id: 3, name: "Ivo Kenov", age: 15, avatarUrl: "images/ivo.jpg"
-            }]
-        }
+            }];
 
-        // Use data and template to populate the main div
-        var tepmplateCode = $('#person-template'),
-            templateHtml = tepmplateCode.html(),
-            compiledTemplate = Handlebars.compile(templateHtml);
-
-        $("#mainDiv").append(compiledTemplate(people));
+        // Populate the main div
+        $("#mainDiv").templateEngine(people);
 
         // Use jquery plugin to make the dropdown
         $("#mainDiv").combobox();
