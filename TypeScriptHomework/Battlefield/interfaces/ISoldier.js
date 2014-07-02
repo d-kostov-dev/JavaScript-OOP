@@ -1,0 +1,1 @@
+﻿//# sourceMappingURL=ISoldier.js.map

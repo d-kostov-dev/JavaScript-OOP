@@ -1,0 +1,1 @@
+{"version":3,"file":"Army.js","sourceRoot":"","sources":["Army.ts"],"names":["ArmyCollection","ArmyCollection.constructor","ArmyCollection.addUnits"],"mappings":"AAAA;IAGIA,wBAAYA,KAAeA;QAAfC,UAAYA,GAALA,KAAKA;AAAGA,IAAIA,CAACA;IAEhCD,oCAAAA,UAAYA,IAAIA;QACZE,IAAIA,CAACA,aAAaA,CAACA,IAAIA,CAACA,IAAIA,CAACA;IACjCA,CAACA;IACLF,sBAACA;AAADA,CAACA,IAAA"}

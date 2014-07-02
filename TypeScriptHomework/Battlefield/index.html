@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Battlefield</title>
+    <script src="enumerations/PilotType.js"></script>
+    <script src="baseclasses/Soldier.js"></script>
+    <script src="baseclasses/Machine.js"></script>
+    <script src="machines/Tank.js"></script>
+    <script src="soldiers/Pilot.js"></script>
+    <script src="soldiers/Marine.js"></script>
+    <script src="machines/Plane.js"></script>
+    <script src="Army.js"></script>
+</head>
+<body>
+    <script>
+        var marinePesho = new Soldier.Marine("Pesho", 100, 50);
+        console.log(marinePesho.greet());
+        console.log(Soldier.Marine.uniformColor);
+
+        var pilotIvan = new Soldier.Pilot("Ivan", 100, 100, Enumerations.PilotType.JetPilot);
+        console.log(pilotIvan.greet());
+        console.log(Soldier.Pilot.uniformColor);
+
+        var t30Tank = new Machine.Tank("T30", 5000, 200);
+        t30Tank.addDriver(marinePesho);
+        console.log(t30Tank.move(50, 50));
+
+        var f16Plane = new Machine.Plane("F16", 5000, 200);
+        f16Plane.addDriver(pilotIvan);
+        console.log(f16Plane.move(60, 50));
+
+        var currentArmy = new ArmyCollection<BaseClasses.Soldier>(null);
+        currentArmy.addUnits<BaseClasses.Soldier>(pilotIvan);
+    </script>
+</body>
+</html>
